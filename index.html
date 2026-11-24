@@ -155,4 +155,4 @@ function hhOpenPhoto(img){
 function hhClosePhoto(){let overlay=document.getElementById('hh-lightbox');if(overlay){overlay.hidden=true;overlay.querySelector('img').removeAttribute('src')}document.body.style.overflow=''}
 document.addEventListener('click',e=>{let btn=e.target.closest('.photo-apply-all[data-photo-id]');if(btn){applyPhotoDetailsToCategory(btn.dataset.photoId);return}});document.addEventListener('click',e=>{let btn=e.target.closest('.photo-edit[data-photo-id]');if(btn){editPhotoDetails(btn.dataset.photoId);return}});document.addEventListener('click',e=>{let img=e.target.closest('#guest-detail .gallery img');if(img&&img.getAttribute('src'))hhOpenPhoto(img)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('hh-lightbox')?.hidden)hhClosePhoto()});
-</script></html>
+</script><style id="hh-midnight-background">body{background:#09182b!important}.botanical-photo{display:none!important}</style></html>
